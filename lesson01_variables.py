@@ -1,3 +1,10 @@
+"""
+Lesson 1: Variables & Basic Data Types
+
+Demonstrates Python core types (str, int, float, bool) and f-strings
+for formatted output - the foundation for all further Python work.
+"""
+
 first_name = "Cawad"
 age = 40
 height = 1.75

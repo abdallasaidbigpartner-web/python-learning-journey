@@ -1,3 +1,10 @@
+"""
+Practice: Tuples & Dictionaries in Loops
+
+Demonstrates unpacking tuples and dictionary items correctly in a
+for loop, with variable names matching the real data order.
+"""
+
 fruits = [(1, "apple"), (3, "banana"), (1000, "cherry")]
 
 for quantity, fruit in fruits:

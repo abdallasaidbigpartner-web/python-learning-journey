@@ -1,3 +1,11 @@
+"""
+Lesson 4: Functions
+
+Demonstrates defining reusable functions with parameters and return
+values, and the distinction between return (usable result) and print
+(display only).
+"""
+
 def square(number):
     return number * number
 
