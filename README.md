@@ -6,7 +6,7 @@
 
 
 
-Daily Python lessons and exercises, building toward a software engineering / AI engineering career - from core fundamentals through backend APIs, databases, authentication, and Docker/CI.
+Structured Python engineering progression covering software development, backend APIs, databases, testing, Docker/CI, machine learning, and AI systems.
 
 ## Progress
 
