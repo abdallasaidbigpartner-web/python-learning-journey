@@ -27,7 +27,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt pytest httpx
+        run: pip install -r requirements.txt pytest httpx scikit-learn numpy groq
 
-      - name: Run test suite
-        run: pytest -v
+      - name: Run test suite (excluding PyTorch tests, which run via dedicated CI)
+        run: pytest -v --ignore=test_neural_network.py
