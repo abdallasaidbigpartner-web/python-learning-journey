@@ -3,8 +3,15 @@ name: Run Tests
 on:
   push:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - '.github/workflows/run-tests.yml'
   pull_request:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'requirements.txt'
 
 jobs:
   test:

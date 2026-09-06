@@ -3,8 +3,13 @@ name: Test Neural Embeddings
 on:
   push:
     branches: [main]
+    paths:
+      - 'lesson30_neural_embeddings.py'
+      - '.github/workflows/embeddings-test.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'lesson30_neural_embeddings.py'
 
 jobs:
   test:

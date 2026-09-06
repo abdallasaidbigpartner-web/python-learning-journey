@@ -3,8 +3,17 @@ name: Build Docker Image
 on:
   push:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'Dockerfile'
+      - 'requirements.txt'
+      - '.github/workflows/docker-build.yml'
   pull_request:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'Dockerfile'
+      - 'requirements.txt'
 
 jobs:
   build:
