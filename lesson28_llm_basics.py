@@ -6,6 +6,11 @@ becomes tokens, how a prompt is sent to a Large Language Model, and
 how the model's response is retrieved and used - directly connecting
 to the architecture behind Claude, GPT, and the user's own Termux AI
 project.
+
+Professionalization pass: guarded the demo/script code with
+`if __name__ == "__main__":` so importing this module (e.g. for
+tests) doesn't trigger a real API call - a standard, important
+Python practice.
 """
 
 import os
@@ -28,18 +33,19 @@ def ask_llm(prompt: str) -> str:
     response = client.chat.completions.create(
         model="openai/gpt-oss-20b",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=100,
+        max_tokens=300,
     )
     return response.choices[0].message.content
 
 
-prompt = "In one sentence, explain what a neural network is."
+if __name__ == "__main__":
+    prompt = "In one sentence, explain what a neural network is."
 
-print(f"Prompt: {prompt}")
-print(f"Approximate token count of prompt: {approximate_token_count(prompt)}")
+    print(f"Prompt: {prompt}")
+    print(f"Approximate token count of prompt: {approximate_token_count(prompt)}")
 
-print("\nSending to LLM...")
-answer = ask_llm(prompt)
+    print("\nSending to LLM...")
+    answer = ask_llm(prompt)
 
-print(f"\nLLM response: {answer}")
-print(f"Approximate token count of response: {approximate_token_count(answer)}")
+    print(f"\nLLM response: {answer}")
+    print(f"Approximate token count of response: {approximate_token_count(answer)}")
