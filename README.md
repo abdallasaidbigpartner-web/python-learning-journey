@@ -6,7 +6,7 @@
 
 
 
-Daily Python lessons and exercises, building toward a software engineering / AI engineering career - from core fundamentals through backend APIs, databases, authentication, and Docker/CI.
+Structured Python engineering progression covering software development, backend APIs, databases, testing, Docker/CI, machine learning, and AI systems.
 
 ## Progress
 
@@ -35,30 +35,53 @@ Daily Python lessons and exercises, building toward a software engineering / AI 
 
 ### Backend Engineering
 
-- Lesson 17: FastAPI — building HTTP APIs
-- Lesson 18: PostgreSQL — connecting an API to a real database
-- Lesson 19: Authentication — bcrypt password hashing & login
+- Lesson 17: FastAPI — building HTTP APIs (with automated API tests via TestClient)
+- Lesson 18: PostgreSQL — connecting an API to a real database, full CRUD with validation
+- Lesson 19: Authentication — bcrypt password hashing, login, real PostgreSQL persistence
 
 ### DevOps & CI
 
 - Lesson 20: Docker & GitHub Actions CI
-- Automated build and test workflows
+- Dedicated, path-filtered CI workflows: Docker build, PyTorch tests (cloud), neural embedding tests (cloud), and a general test suite
 
 ### Machine Learning & Deep Learning
 
 - Lesson 21: NumPy — vectors, matrices & matrix operations
 - Lesson 22: Statistics & probability fundamentals
 - Lesson 23: pandas — working with tabular datasets
-- Lesson 24: Machine learning — linear regression
-- Lesson 25: Machine learning — logistic regression classification
-- Lesson 26: Decision trees & overfitting
-- Lesson 27: Neural networks with PyTorch
+- Lesson 24: Machine learning — linear regression (with automated model-behavior tests)
+- Lesson 25: Machine learning — logistic regression classification (with automated tests)
+- Lesson 26: Decision trees & overfitting (with automated tests verifying the overfitting gap)
+- Lesson 27: Neural networks with PyTorch (tested via GitHub Actions cloud CI, since PyTorch cannot build on Android/Termux)
 
 ### Generative AI & Information Retrieval
 
-- Lesson 28: LLM fundamentals — tokens, prompts & API calls
+- Lesson 28: LLM fundamentals — tokens, prompts & API calls (with mocked tests, avoiding real API calls in CI)
 - Lesson 29: Classical text retrieval — TF-IDF & cosine similarity
-- Lesson 30: Neural embeddings — semantic search with Sentence Transformers
+- Lesson 30: Neural embeddings — semantic search with Sentence Transformers (cloud CI)
+- Lesson 31: Retrieval-Augmented Generation (RAG) — combining retrieval with LLM grounding
 
-### Next: Retrieval-Augmented Generation
+### AI Agents
 
+- Lesson 32: AI agents & tool calling — the LLM decides when to invoke a real function, executes it, and uses the result
+
+### MLOps & Production
+
+- Lesson 33: Serving a model in production — health checks, structured logging, model versioning, input validation
+
+## Engineering Practices
+
+- **Testing:** unit tests (pytest), API tests (FastAPI TestClient), mocked external-API tests, and cloud-CI-verified deep learning tests
+- **CI/CD:** path-filtered GitHub Actions workflows so each pipeline only runs when relevant files change
+- **Database-backed, not in-memory:** authentication and CRUD operations persist to real PostgreSQL
+- **Input validation:** Pydantic validators reject malformed data before it reaches business logic
+
+## Capstone Project
+
+Skills from this repository (backend, database, auth, RAG) are combined into a single production-style system:
+- [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) — FastAPI + PostgreSQL + bcrypt auth + RAG, with tests, Docker, and CI including a real ephemeral database service
+
+## Related Repositories
+
+- [typescript-learning-journey](https://github.com/abdallasaidbigpartner-web/typescript-learning-journey)
+- [sql-learning-journey](https://github.com/abdallasaidbigpartner-web/sql-learning-journey)
