@@ -16,6 +16,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      GROQ_API_KEY: fake-key-for-ci-testing
 
     steps:
       - name: Checkout code
