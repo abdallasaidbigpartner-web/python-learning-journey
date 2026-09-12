@@ -2,7 +2,10 @@
 
 
 
-![Build Status](https://github.com/abdallasaidbigpartner-web/python-learning-journey/actions/workflows/docker-build.yml/badge.svg)
+![Tests](https://github.com/abdallasaidbigpartner-web/python-learning-journey/actions/workflows/run-tests.yml/badge.svg)
+![Docker Build](https://github.com/abdallasaidbigpartner-web/python-learning-journey/actions/workflows/docker-build.yml/badge.svg)
+![PyTorch Tests](https://github.com/abdallasaidbigpartner-web/python-learning-journey/actions/workflows/pytorch-test.yml/badge.svg)
+![Embeddings Tests](https://github.com/abdallasaidbigpartner-web/python-learning-journey/actions/workflows/embeddings-test.yml/badge.svg)
 
 
 
