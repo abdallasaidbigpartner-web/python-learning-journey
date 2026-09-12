@@ -85,3 +85,8 @@ Skills from this repository (backend, database, auth, RAG) are combined into a s
 
 - [typescript-learning-journey](https://github.com/abdallasaidbigpartner-web/typescript-learning-journey)
 - [sql-learning-journey](https://github.com/abdallasaidbigpartner-web/sql-learning-journey)
+- [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) - capstone project combining this repo's backend/RAG skills
+- [study-assistant-frontend](https://github.com/abdallasaidbigpartner-web/study-assistant-frontend) - React frontend for the AI Study Assistant
+- [task-manager-api](https://github.com/abdallasaidbigpartner-web/task-manager-api) - TypeScript capstone
+- [ecommerce-database](https://github.com/abdallasaidbigpartner-web/ecommerce-database) - SQL capstone
+- [url-shortener-go](https://github.com/abdallasaidbigpartner-web/url-shortener-go) - Go capstone
