@@ -94,3 +94,12 @@ Skills from this repository (backend, database, auth, RAG) are combined into a s
 - [task-manager-api](https://github.com/abdallasaidbigpartner-web/task-manager-api) - TypeScript capstone
 - [ecommerce-database](https://github.com/abdallasaidbigpartner-web/ecommerce-database) - SQL capstone
 - [url-shortener-go](https://github.com/abdallasaidbigpartner-web/url-shortener-go) - Go capstone
+
+
+## Support this project
+
+If you'd like to support this learning journey, donations are welcome via USDT (TRC20):
+
+**Wallet address:** `TCBnY7hFqxMMgdgQk6j8erSXrRrhmdS3Ls`
+
+Please double-check the network is set to TRC20 (Tron) before sending — using the wrong network can result in lost funds.
