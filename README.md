@@ -98,8 +98,18 @@ Skills from this repository (backend, database, auth, RAG) are combined into a s
 
 ## Support this project
 
-If you'd like to support this learning journey, donations are welcome via USDT (TRC20):
+If you'd like to support this learning journey, donations are welcome via the following:
 
-**Wallet address:** `TCBnY7hFqxMMgdgQk6j8erSXrRrhmdS3Ls`
+**USDT (TRC20):** `TCBnY7hFqxMMgdgQk6j8erSXrRrhmdS3Ls`
 
-Please double-check the network is set to TRC20 (Tron) before sending — using the wrong network can result in lost funds.
+**BTC:** `1KQL7XMnakBU9hTzsMj9zaapDtxrQJkK1j`
+
+**BNB:** `0xaee384e94b1f285fb29b51f54f427e2ecc01b8af`
+
+**ETH:** `0xaee384e94b1f285fb29b51f54f427e2ecc01b8af`
+
+**SOL:** `Beh6qBXg1eCCRPsvv29vxXTBeBF6QgJc8QRYKF7sJqmV`
+
+**LTC:** `LgHozi1p4cZjMVS7PadhrVJoxsFs8jRcZK`
+
+Please double-check the network/chain matches before sending — using the wrong network can result in lost funds.
